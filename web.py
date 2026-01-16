@@ -57,7 +57,7 @@ st.markdown(f"""
 
 #Logic(home)
 if st.session_state.page == 'home':
-    st.markdown('<div class="main-banner"><h2>พรรค สดุมาส่งแล้วคร้าฟ</h2></div>', unsafe_allow_html=True)
+    st.markdown('<div class="main-banner"><h1.5>พรรค สดุมาส่งแล้วคร้าฟ📦✨</h1.5></div>', unsafe_allow_html=True)
     st.write("##")
     st.write("##")
     col1, col2 = st.columns(2)
@@ -111,4 +111,5 @@ elif st.session_state.page == 'member':
         st.session_state.page = 'home'
 
         st.rerun()
+
 
