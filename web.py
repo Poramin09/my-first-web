@@ -57,7 +57,7 @@ st.markdown(f"""
 
 #Logic(home)
 if st.session_state.page == 'home':
-    st.markdown('<div class="main-banner"><h1>พรรค สดุมาส่งแล้วคร้าฟ</h1></div>', unsafe_allow_html=True)
+    st.markdown('<div class="main-banner"><h3>พรรค สดุมาส่งแล้วคร้าฟ</h3></div>', unsafe_allow_html=True)
     st.write("##")
     st.write("##")
     col1, col2 = st.columns(2)
@@ -109,4 +109,5 @@ elif st.session_state.page == 'member':
     st.write("B")
     if st.button("⬅️ กลับ"):
         st.session_state.page = 'home'
+
         st.rerun()
